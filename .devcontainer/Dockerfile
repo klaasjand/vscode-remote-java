@@ -13,7 +13,8 @@ RUN groupadd --gid $USER_GID $USERNAME \
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends \
         curl \
-        git
+        git \
+        maven
 
 # Remove or comment out to use root user
 USER $USERNAME
