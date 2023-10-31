@@ -7,25 +7,29 @@
       "DOCKER_IMAGE": "debian:stable-slim"
     }
   },
-  "settings": {
-    "terminal.integrated.profiles.linux": {
-      "bash": {
-        "path": "/bin/bash"
-      }
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        }
+        // NOTE: Add an url to an Eclipse based Java style guide
+        // "java.format.settings.url": "",
+        // "redhat.telemetry.enabled": false
+      },
+      "extensions": [
+        "redhat.vscode-xml",
+        // NOTE: Replace the lines below with: "vscjava.vscode-java-pack" if you want all the extensions below including the IntelliCode extension
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency"
+      ]
     }
-    // NOTE: Add an url to an Eclipse based Java style guide
-    // "java.format.settings.url": "",
-    // "redhat.telemetry.enabled": false
   },
-  "extensions": [
-    "redhat.vscode-xml",
-    // NOTE: Replace the lines below with: "vscjava.vscode-java-pack" if you want all the extensions below including the IntelliCode extension
-    "redhat.java",
-    "vscjava.vscode-java-debug",
-    "vscjava.vscode-java-test",
-    "vscjava.vscode-maven",
-    "vscjava.vscode-java-dependency"
-  ],
   "forwardPorts": [
     8080
   ],
