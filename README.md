@@ -4,7 +4,7 @@ Develop Java in VS Code with a Debian based development container
 ## Devcontainer settings
 Please find the devcontainer settings in [devcontainer.json](.devcontainer/devcontainer.json)
 
-Mandatory: replace debian:stable-slim with a Debian based Java image of choice before opening the project in a container.
+Mandatory: replace `debian:stable-slim` with a Debian based Java JDK image of choice before opening the project in a container.
 ```json
 "DOCKER_IMAGE": "debian:stable-slim"
 ```
